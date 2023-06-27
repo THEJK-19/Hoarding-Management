@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: url(background2.jpg);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.26);
+    perspective: 1000px;
+}
+
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-front , .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(login1.png);
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: black;
+}
+
+::placeholder{
+    color: black;
+    font-size: 12px;
+}
+
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+.submit-btn{
+    position: relative;   
+}
+
+.submit-btn::after{
+    content: '\27a4';
+    color: #fff;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+
+span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.card .btn{
+    margin-top: 70px;
+}
+
+.card a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+span{
+    color: black;
+}
